@@ -106,6 +106,7 @@
     const { hero } = data;
     const section = $("#hero");
     section.innerHTML = `
+      <div class="hero-scene" aria-hidden="true" id="hero-scene"></div>
       <div class="hero-bg-number">2004</div>
       <div class="container hero-content">
         <p class="hero-eyebrow">${hero.eyebrow}</p>
@@ -125,6 +126,8 @@
         <div class="scroll-line"></div>
       </div>`;
 
+    initTruckScene();
+
     // staggered entrance
     requestAnimationFrame(() => {
       const eyebrow = section.querySelector(".hero-eyebrow");
@@ -141,6 +144,185 @@
         }, 100 + i * 120);
       });
     });
+  }
+
+  /* ── Truck Scene ─────────────────────────────────────────────── */
+  function initTruckScene() {
+    const scene = $("#hero-scene");
+    if (!scene) return;
+
+    scene.innerHTML = `
+      <div class="hs-stars" id="hs-stars"></div>
+      <div class="hs-horizon-glow"></div>
+      <div class="hs-road">
+        <div class="hs-road-edge"></div>
+        <div class="hs-road-line"></div>
+      </div>
+      <div class="hs-warehouse">
+        <div class="hs-wh-roof"></div>
+        <div class="hs-wh-body">
+          <div class="hs-wh-window"></div>
+          <div class="hs-wh-window"></div>
+          <div class="hs-wh-label">Depot</div>
+          <div class="hs-wh-door">
+            <div class="hs-wh-ds"></div><div class="hs-wh-ds"></div>
+            <div class="hs-wh-ds"></div><div class="hs-wh-ds"></div>
+            <div class="hs-wh-ds"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-dock-boxes" id="hs-dock-boxes">
+        <div class="hs-box hs-box-tall" id="hb1"></div>
+        <div class="hs-box" id="hb2"></div>
+        <div class="hs-box hs-box-tall" id="hb3"></div>
+        <div class="hs-box" id="hb4"></div>
+      </div>
+      <div class="hs-arm-wrap" id="hs-arm">
+        <div class="hs-arm"></div>
+      </div>
+      <div class="hs-moving-box" id="hs-mbox"></div>
+      <div class="hs-truck-wrap" id="hs-truck">
+        <div class="hs-truck">
+          <div class="hs-bed"></div>
+          <div class="hs-bed-side"></div>
+          <div class="hs-cabin">
+            <div class="hs-exhaust">
+              <div class="hs-puff hs-p1"></div>
+              <div class="hs-puff hs-p2"></div>
+              <div class="hs-puff hs-p3"></div>
+            </div>
+            <div class="hs-cabin-roof"></div>
+            <div class="hs-cabin-body">
+              <div class="hs-windshield"></div>
+              <div class="hs-cabin-door"></div>
+              <div class="hs-headlight" id="hs-headlight"></div>
+            </div>
+          </div>
+          <div class="hs-wheels">
+            <div class="hs-wheel hs-w1"></div>
+            <div class="hs-wheel hs-w2"></div>
+            <div class="hs-wheel hs-w3"></div>
+            <div class="hs-wheel hs-w4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-cargo-items" id="hs-cargo">
+        <div class="hs-ci hs-ci-tall"></div>
+        <div class="hs-ci"></div>
+        <div class="hs-ci hs-ci-tall"></div>
+      </div>
+      <div class="hs-speed-lines" id="hs-speed">
+        <div class="hs-sl hs-sl1"></div><div class="hs-sl hs-sl2"></div>
+        <div class="hs-sl hs-sl3"></div><div class="hs-sl hs-sl4"></div>
+        <div class="hs-sl hs-sl5"></div>
+      </div>`;
+
+    // Stars
+    const starsEl = $("#hs-stars");
+    for (let i = 0; i < 55; i++) {
+      const s = document.createElement("div");
+      s.className = "hs-star";
+      s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*65}%;opacity:${(Math.random()*0.4+0.1).toFixed(2)};width:${Math.random()<0.2?3:2}px;height:${Math.random()<0.2?3:2}px`;
+      starsEl.appendChild(s);
+    }
+
+    const truck    = $("#hs-truck");
+    const cargo    = $("#hs-cargo");
+    const speed    = $("#hs-speed");
+    const light    = $("#hs-headlight");
+    const arm      = $("#hs-arm");
+    const mbox     = $("#hs-mbox");
+    const wheels   = $$(".hs-wheel");
+    const vw       = scene.offsetWidth || window.innerWidth;
+
+    const startX   = Math.max(vw * 0.38, 260);
+    const loadX    = Math.max(vw * 0.26, 210);
+    const endX     = vw + 320;
+
+    const spinWheels = (on) => wheels.forEach(w => w.classList.toggle("hs-spinning", on));
+
+    const setTruck = (x, animate) => {
+      truck.style.transition = animate ? truck.style.transition : "none";
+      truck.style.left = x + "px";
+    };
+    const setCargo = (x, animate) => {
+      cargo.style.transition = animate ? cargo.style.transition : "none";
+      cargo.style.left = (x + 14) + "px";
+    };
+
+    setTruck(startX, false);
+    setCargo(startX, false);
+
+    const boxes = ["hb1","hb2","hb3"].map(id => document.getElementById(id));
+
+    function runSequence() {
+      // drive to dock
+      setTimeout(() => {
+        truck.style.transition = "left 1.4s cubic-bezier(0.3,0,0.2,1)";
+        cargo.style.transition = "left 1.4s cubic-bezier(0.3,0,0.2,1)";
+        setTruck(loadX, true);
+        setCargo(loadX, true);
+        spinWheels(true);
+      }, 500);
+
+      // stop, arm tips
+      setTimeout(() => {
+        spinWheels(false);
+        arm.style.transform = "rotate(-30deg)";
+      }, 2100);
+
+      // load 3 boxes
+      [0,1,2].forEach((i) => {
+        const delay = 2600 + i * 800;
+        setTimeout(() => {
+          mbox.style.transition = "none";
+          mbox.style.cssText += `left:${loadX+24+i*8}px;bottom:88px;opacity:1;transition:none`;
+          setTimeout(() => {
+            mbox.style.transition = "all 0.5s cubic-bezier(0.4,0,0.2,1)";
+            mbox.style.left = (loadX + 50 + i * 12) + "px";
+            mbox.style.bottom = "134px";
+          }, 40);
+          if (boxes[i]) boxes[i].classList.add("hs-gone");
+        }, delay);
+        setTimeout(() => { mbox.style.opacity = "0"; }, delay + 560);
+      });
+
+      // arm retracts, cargo visible, lights on
+      setTimeout(() => {
+        arm.style.transform = "rotate(0deg)";
+        cargo.style.transition = "none";
+        setCargo(loadX, false);
+        cargo.classList.add("hs-loaded");
+        light.classList.add("hs-on");
+      }, 5100);
+
+      // drive away
+      setTimeout(() => {
+        truck.style.transition = "left 2.2s cubic-bezier(0.4,0,1,1)";
+        cargo.style.transition = "left 2.2s cubic-bezier(0.4,0,1,1), opacity 0.5s";
+        setTruck(endX, true);
+        setCargo(endX, true);
+        spinWheels(true);
+        speed.classList.add("hs-show");
+      }, 5900);
+
+      // reset
+      setTimeout(() => {
+        truck.style.transition = "none";
+        cargo.style.transition = "none";
+        cargo.classList.remove("hs-loaded");
+        light.classList.remove("hs-on");
+        spinWheels(false);
+        speed.classList.remove("hs-show");
+        boxes.forEach(b => { if(b) b.classList.remove("hs-gone"); });
+        arm.style.transform = "rotate(0deg)";
+        setTruck(startX, false);
+        setCargo(startX, false);
+        setTimeout(runSequence, 700);
+      }, 8500);
+    }
+
+    runSequence();
   }
 
   /* ── 5. Stats ──────────────────────────────────────────────── */

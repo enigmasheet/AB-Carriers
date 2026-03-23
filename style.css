@@ -1137,3 +1137,335 @@ a .office-value:hover { color: var(--gold); }
   /* Footer */
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
+
+/* ── HERO TRUCK SCENE ───────────────────────────────────────── */
+.hero-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Stars */
+.hs-star {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(248,246,240,0.5);
+}
+.hs-horizon-glow {
+  position: absolute;
+  bottom: 80px; right: 8%;
+  width: 160px; height: 50px;
+  background: radial-gradient(ellipse, rgba(201,153,58,0.07) 0%, transparent 70%);
+}
+
+/* Road */
+.hs-road {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 88px;
+  background: #0d1a2e;
+}
+.hs-road-edge {
+  position: absolute;
+  bottom: 80px; left: 0; right: 0;
+  height: 1px;
+  background: rgba(201,153,58,0.2);
+}
+.hs-road-line {
+  position: absolute;
+  bottom: 40px; left: 0; right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(90deg, rgba(201,153,58,0.55) 0, rgba(201,153,58,0.55) 38px, transparent 38px, transparent 76px);
+  animation: hs-road 1s linear infinite;
+}
+@keyframes hs-road {
+  from { background-position: 0 0; }
+  to   { background-position: -76px 0; }
+}
+
+/* Warehouse */
+.hs-warehouse {
+  position: absolute;
+  bottom: 88px; left: 36px;
+  width: 190px; height: 150px;
+}
+.hs-wh-roof {
+  position: absolute;
+  bottom: 138px; left: -8px; right: -8px;
+  height: 26px;
+  background: #0f2240;
+  border-top: 2px solid rgba(201,153,58,0.28);
+  clip-path: polygon(0 100%, 5% 0, 95% 0, 100% 100%);
+}
+.hs-wh-body {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 140px;
+  background: #132849;
+  border: 1px solid rgba(201,153,58,0.14);
+  border-radius: 3px 3px 0 0;
+}
+.hs-wh-window {
+  position: absolute;
+  top: 26px;
+  width: 26px; height: 20px;
+  background: rgba(201,153,58,0.07);
+  border: 1px solid rgba(201,153,58,0.18);
+  border-radius: 2px;
+}
+.hs-wh-window:first-of-type { left: 18px; }
+.hs-wh-window:last-of-type  { right: 18px; }
+.hs-wh-label {
+  position: absolute;
+  top: 58px; left: 0; right: 0;
+  text-align: center;
+  font-family: var(--ff-display);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(201,153,58,0.45);
+}
+.hs-wh-door {
+  position: absolute;
+  bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 52px; height: 68px;
+  background: #0b1f3a;
+  border: 1px solid rgba(201,153,58,0.22);
+  border-bottom: none;
+}
+.hs-wh-ds {
+  height: 2px;
+  background: rgba(201,153,58,0.15);
+  margin: 10px 8px 0;
+}
+
+/* Dock boxes */
+.hs-dock-boxes {
+  position: absolute;
+  bottom: 88px; left: 64px;
+  display: flex; gap: 5px;
+  align-items: flex-end;
+}
+.hs-box {
+  width: 22px; height: 22px;
+  background: #1a3460;
+  border: 1px solid rgba(201,153,58,0.3);
+  border-radius: 2px;
+  transition: opacity 0.35s, transform 0.45s;
+}
+.hs-box-tall { height: 32px; }
+.hs-gone {
+  opacity: 0;
+  transform: translateX(18px);
+}
+
+/* Loading arm */
+.hs-arm-wrap {
+  position: absolute;
+  bottom: 88px; left: 146px;
+  transform-origin: bottom center;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.hs-arm {
+  width: 4px; height: 42px;
+  background: rgba(201,153,58,0.38);
+  border-radius: 2px;
+  position: relative;
+}
+.hs-arm::after {
+  content: '';
+  position: absolute;
+  top: -4px; left: -4px;
+  width: 12px; height: 8px;
+  background: rgba(201,153,58,0.48);
+  border-radius: 2px;
+}
+
+/* Moving box */
+.hs-moving-box {
+  position: absolute;
+  width: 22px; height: 22px;
+  background: #1a3460;
+  border: 1px solid rgba(201,153,58,0.4);
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Truck */
+.hs-truck-wrap {
+  position: absolute;
+  bottom: 88px; left: 0;
+}
+.hs-truck {
+  position: relative;
+  width: 256px; height: 98px;
+}
+.hs-bed {
+  position: absolute;
+  bottom: 24px; left: 0;
+  width: 164px; height: 60px;
+  background: #132849;
+  border: 1.5px solid rgba(201,153,58,0.22);
+  border-radius: 3px 3px 0 0;
+}
+.hs-bed-side {
+  position: absolute;
+  bottom: 18px; left: 0;
+  width: 164px; height: 8px;
+  background: #0f2240;
+  border-bottom: 1.5px solid rgba(201,153,58,0.18);
+}
+.hs-cabin {
+  position: absolute;
+  bottom: 24px; right: 0;
+  width: 78px; height: 70px;
+}
+.hs-cabin-roof {
+  position: absolute;
+  top: 0; left: 4px; right: 0;
+  height: 18px;
+  background: #132849;
+  border: 1.5px solid rgba(201,153,58,0.28);
+  border-radius: 6px 6px 0 0;
+}
+.hs-cabin-body {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  top: 16px;
+  background: #1a3460;
+  border: 1.5px solid rgba(201,153,58,0.32);
+  border-radius: 3px 5px 0 0;
+}
+.hs-windshield {
+  position: absolute;
+  bottom: 26px; right: 5px;
+  width: 34px; height: 28px;
+  background: rgba(201,153,58,0.07);
+  border: 1px solid rgba(201,153,58,0.22);
+  border-radius: 2px 3px 0 0;
+}
+.hs-cabin-door {
+  position: absolute;
+  bottom: 3px; left: 7px;
+  width: 30px; height: 34px;
+  border: 1px solid rgba(201,153,58,0.16);
+  border-radius: 2px;
+}
+.hs-headlight {
+  position: absolute;
+  bottom: 30px; right: 0;
+  width: 8px; height: 10px;
+  background: rgba(201,153,58,0.5);
+  border-radius: 1px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.hs-headlight.hs-on {
+  background: rgba(228,184,78,0.9);
+  box-shadow: 0 0 16px rgba(228,184,78,0.5);
+}
+
+/* Exhaust */
+.hs-exhaust {
+  position: absolute;
+  top: 3px; right: 6px;
+  width: 5px; height: 13px;
+  background: #0f2240;
+  border: 1px solid rgba(201,153,58,0.18);
+  border-radius: 2px 2px 0 0;
+}
+.hs-puff {
+  position: absolute;
+  top: -5px; right: 3px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  opacity: 0;
+}
+.hs-p1 { animation: hs-puff 1.2s ease-out infinite 0s; }
+.hs-p2 { animation: hs-puff 1.2s ease-out infinite 0.4s; }
+.hs-p3 { animation: hs-puff 1.2s ease-out infinite 0.8s; }
+@keyframes hs-puff {
+  0%   { opacity: 0; transform: translate(0,0) scale(0.5); }
+  30%  { opacity: 0.45; }
+  100% { opacity: 0; transform: translate(-13px,-15px) scale(1.8); }
+}
+
+/* Wheels */
+.hs-wheels {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+}
+.hs-wheel {
+  position: absolute;
+  bottom: 0;
+  width: 26px; height: 26px;
+  background: #0b1f3a;
+  border: 3px solid rgba(201,153,58,0.48);
+  border-radius: 50%;
+  animation: hs-spin 0.45s linear infinite;
+  animation-play-state: paused;
+}
+.hs-wheel::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 2px solid rgba(201,153,58,0.22);
+}
+.hs-spinning { animation-play-state: running !important; }
+.hs-w1 { left: 10px; }
+.hs-w2 { left: 44px; }
+.hs-w3 { right: 50px; }
+.hs-w4 { right: 16px; }
+@keyframes hs-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Cargo on truck */
+.hs-cargo-items {
+  position: absolute;
+  bottom: 88px;
+  display: flex; gap: 4px;
+  align-items: flex-end;
+  opacity: 0;
+  transition: opacity 0.45s;
+}
+.hs-loaded { opacity: 1; }
+.hs-ci {
+  width: 20px; height: 20px;
+  background: #1a3460;
+  border: 1px solid rgba(201,153,58,0.32);
+  border-radius: 2px;
+}
+.hs-ci-tall { height: 30px; }
+
+/* Speed lines */
+.hs-speed-lines {
+  position: absolute;
+  bottom: 108px; right: 5%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.hs-speed-lines.hs-show { opacity: 1; }
+.hs-sl {
+  position: absolute;
+  height: 1.5px;
+  background: linear-gradient(to left, transparent, rgba(201,153,58,0.28));
+  border-radius: 2px;
+}
+.hs-sl1 { top: 0;   right: 0; width: 58px; }
+.hs-sl2 { top: 8px; right: 0; width: 38px; }
+.hs-sl3 { top:16px; right: 0; width: 48px; }
+.hs-sl4 { top:24px; right: 0; width: 32px; }
+.hs-sl5 { top:32px; right: 0; width: 44px; }
+
+/* Reduced motion: pause all scene animations */
+@media (prefers-reduced-motion: reduce) {
+  .hs-road-line,
+  .hs-puff, .hs-p1, .hs-p2, .hs-p3,
+  .hs-wheel, .hs-spinning { animation: none !important; }
+}
