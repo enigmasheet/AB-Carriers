@@ -1,0 +1,71 @@
+<svg viewBox="0 0 260 68" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AB Carriers 6-wheel truck" style="width:100%;display:block">
+  <title>AB Carriers 6-Wheel Truck</title>
+
+  <!-- Trailer body -->
+  <rect x="0" y="10" width="160" height="46" rx="2" fill="#252528" stroke="#383838" stroke-width=".8"/>
+  <rect x="2" y="12" width="156" height="42" rx="1.5" fill="#1e1e21"/>
+
+  <!-- Trailer branding -->
+  <text x="80" y="38" text-anchor="middle" font-family="Oswald,sans-serif" font-size="10" font-weight="700" fill="rgba(245,166,35,.22)">AB CARRIERS</text>
+  <line x1="0" y1="48" x2="160" y2="48" stroke="rgba(245,166,35,.25)" stroke-width=".8"/>
+
+  <!-- Trailer panel ribs -->
+  <line x1="40"  y1="12" x2="40"  y2="48" stroke="#2e2e32" stroke-width=".7"/>
+  <line x1="80"  y1="12" x2="80"  y2="48" stroke="#2e2e32" stroke-width=".7"/>
+  <line x1="120" y1="12" x2="120" y2="48" stroke="#2e2e32" stroke-width=".7"/>
+
+  <!-- Coupling hitch -->
+  <rect x="157" y="48" width="6" height="6" rx="1" fill="#333"/>
+
+  <!-- Cab body -->
+  <rect x="163" y="16" width="88" height="40" rx="3" fill="#2c2c32" stroke="#3a3a40" stroke-width=".8"/>
+
+  <!-- Windshield -->
+  <path d="M167,19 L204,16 L204,42 L167,45Z" fill="#181c28" opacity=".9"/>
+  <line x1="185" y1="16" x2="185" y2="42" stroke="#1e2230" stroke-width=".6"/>
+
+  <!-- Side window -->
+  <rect x="207" y="22" width="22" height="14" rx="1.5" fill="#161824" stroke="#282830" stroke-width=".5"/>
+
+  <!-- Door line -->
+  <line x1="205" y1="18" x2="205" y2="56" stroke="#383840" stroke-width=".6"/>
+
+  <!-- Grille -->
+  <rect x="240" y="27" width="4" height="18" rx="1" fill="#1a1a1e"/>
+  <line x1="240" y1="33" x2="244" y2="33" stroke="#2a2a2e" stroke-width=".8"/>
+  <line x1="240" y1="38" x2="244" y2="38" stroke="#2a2a2e" stroke-width=".8"/>
+  <line x1="240" y1="43" x2="244" y2="43" stroke="#2a2a2e" stroke-width=".8"/>
+
+  <!-- Headlight -->
+  <rect x="241" y="22" width="7" height="5" rx="1" fill="#f5a623" opacity=".85"/>
+
+  <!-- Exhaust stack -->
+  <rect x="230" y="4" width="4" height="16" rx="1.5" fill="#323236"/>
+
+  <!-- Bumper -->
+  <rect x="245" y="50" width="6" height="5" rx="1" fill="#2e2e32"/>
+
+  <!-- ══ AXLE 1 — rear trailer (dual wheels) ══ -->
+  <circle cx="22" cy="59" r="9.5" fill="#171719" stroke="#303030" stroke-width="1.2"/>
+  <circle cx="22" cy="59" r="5"   fill="#1e1e20" stroke="#383838" stroke-width=".8"/>
+  <circle cx="22" cy="59" r="1.8" fill="#f5a623" opacity=".5"/>
+  <!-- outer tyre ring (dual effect) -->
+  <circle cx="26" cy="59" r="8.5" fill="none" stroke="#262626" stroke-width="2"/>
+
+  <!-- ══ AXLE 2 — mid trailer (dual wheels) ══ -->
+  <circle cx="72" cy="59" r="9.5" fill="#171719" stroke="#303030" stroke-width="1.2"/>
+  <circle cx="72" cy="59" r="5"   fill="#1e1e20" stroke="#383838" stroke-width=".8"/>
+  <circle cx="72" cy="59" r="1.8" fill="#f5a623" opacity=".5"/>
+  <circle cx="76" cy="59" r="8.5" fill="none" stroke="#262626" stroke-width="2"/>
+
+  <!-- ══ AXLE 3 — cab rear drive (dual wheels) ══ -->
+  <circle cx="198" cy="59" r="9.5" fill="#171719" stroke="#303030" stroke-width="1.2"/>
+  <circle cx="198" cy="59" r="5"   fill="#1e1e20" stroke="#383838" stroke-width=".8"/>
+  <circle cx="198" cy="59" r="1.8" fill="#f5a623" opacity=".5"/>
+  <circle cx="202" cy="59" r="8.5" fill="none" stroke="#262626" stroke-width="2"/>
+
+  <!-- ══ AXLE 4 — cab front steer (single wide) ══ -->
+  <circle cx="233" cy="59" r="8.5" fill="#171719" stroke="#303030" stroke-width="1.2"/>
+  <circle cx="233" cy="59" r="4.5" fill="#1e1e20" stroke="#383838" stroke-width=".8"/>
+  <circle cx="233" cy="59" r="1.8" fill="#f5a623" opacity=".5"/>
+</svg>

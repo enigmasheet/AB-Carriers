@@ -1,0 +1,8 @@
+<svg viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AB Carriers logo">
+  <title>AB Carriers</title>
+  <rect width="40" height="40" rx="4" fill="#f5a623"/>
+  <rect x="0" y="32" width="40" height="8" rx="0" fill="rgba(0,0,0,.18)"/>
+  <text x="20" y="26" text-anchor="middle"
+    font-family="Oswald,sans-serif" font-size="16" font-weight="700"
+    fill="#0c0c0d" letter-spacing=".04em">AB</text>
+</svg>

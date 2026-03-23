@@ -1,0 +1,41 @@
+/* ─────────────────────────────────────────
+   AB Carriers — Design Tokens
+   Edit this file to change the whole site's look
+   ───────────────────────────────────────── */
+
+:root {
+  /* Backgrounds */
+  --ink:     #0c0c0d;   /* page base */
+  --ink2:    #161618;   /* section alt */
+  --ink3:    #1e1e21;   /* card surface */
+  --ink4:    #242428;   /* deepest card */
+
+  /* Borders */
+  --line:    rgba(255,255,255,.07);
+  --line2:   rgba(255,255,255,.13);
+
+  /* Text */
+  --text:    #eeebe5;
+  --muted:   #7a7672;
+  --faint:   #3e3c3a;
+  --white:   #ffffff;
+
+  /* Brand accent */
+  --or:      #f5a623;
+  --or2:     #e8861a;
+  --or-dim:  rgba(245,166,35,.10);
+  --or-glow: rgba(245,166,35,.18);
+
+  /* Shape */
+  --r:   6px;
+  --r2: 12px;
+
+  /* Typography */
+  --font-display: 'Oswald', sans-serif;
+  --font-body:    'Barlow',  sans-serif;
+
+  /* Transitions */
+  --t-fast:   .15s ease;
+  --t-mid:    .25s ease;
+  --t-smooth: .35s cubic-bezier(.16,1,.3,1);
+}

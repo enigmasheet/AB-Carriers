@@ -1,0 +1,95 @@
+<svg width="320" height="88" viewBox="0 0 320 88" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AB Carriers truck on road">
+  <title>AB Carriers — 6-Wheel Freight Truck</title>
+
+  <!-- Trailer box -->
+  <rect x="0" y="14" width="210" height="58" rx="3" fill="#252528" stroke="#383838" stroke-width="1"/>
+  <rect x="2" y="16" width="206" height="54" rx="2" fill="#1e1e21"/>
+
+  <!-- Brand strip -->
+  <rect x="0" y="60" width="210" height="12" fill="rgba(245,166,35,.14)"/>
+  <line x1="0" y1="60" x2="210" y2="60" stroke="rgba(245,166,35,.35)" stroke-width="1"/>
+
+  <!-- AB lettering -->
+  <text x="105" y="47" text-anchor="middle" font-family="Oswald,sans-serif" font-size="20" font-weight="700" fill="rgba(245,166,35,.18)">AB CARRIERS</text>
+
+  <!-- Panel ribs -->
+  <line x1="42"  y1="16" x2="42"  y2="60" stroke="#2e2e32" stroke-width="1"/>
+  <line x1="84"  y1="16" x2="84"  y2="60" stroke="#2e2e32" stroke-width="1"/>
+  <line x1="126" y1="16" x2="126" y2="60" stroke="#2e2e32" stroke-width="1"/>
+  <line x1="168" y1="16" x2="168" y2="60" stroke="#2e2e32" stroke-width="1"/>
+
+  <!-- Coupling -->
+  <rect x="206" y="60" width="8" height="8" rx="1" fill="#3a3a3e"/>
+
+  <!-- Cab -->
+  <rect x="214" y="22" width="96" height="50" rx="4" fill="#2c2c32" stroke="#3c3c42" stroke-width="1"/>
+
+  <!-- Windshield -->
+  <path d="M219,26 L268,22 L268,52 L219,56Z" fill="#1a1c28" opacity=".9"/>
+  <line x1="243" y1="22" x2="243" y2="52" stroke="#222530" stroke-width=".8"/>
+
+  <!-- Side window -->
+  <rect x="272" y="28" width="28" height="18" rx="2" fill="#181a24" stroke="#2e2e38" stroke-width=".5"/>
+
+  <!-- Door line -->
+  <line x1="270" y1="24" x2="270" y2="72" stroke="#383840" stroke-width=".8"/>
+
+  <!-- Grille -->
+  <rect x="304" y="34" width="5" height="24" rx="1" fill="#1a1a1e"/>
+  <line x1="304" y1="40" x2="309" y2="40" stroke="#2a2a2e" stroke-width="1"/>
+  <line x1="304" y1="46" x2="309" y2="46" stroke="#2a2a2e" stroke-width="1"/>
+  <line x1="304" y1="52" x2="309" y2="52" stroke="#2a2a2e" stroke-width="1"/>
+
+  <!-- Headlight + glow -->
+  <rect x="305" y="28" width="9" height="6" rx="1" fill="#f5a623" opacity=".9"/>
+  <ellipse cx="314" cy="31" rx="8" ry="4" fill="#f5a623" opacity=".15"/>
+
+  <!-- Bumper -->
+  <rect x="308" y="62" width="10" height="6" rx="1" fill="#323236"/>
+
+  <!-- Exhaust stack -->
+  <rect x="286" y="4" width="5" height="22" rx="2" fill="#3a3a3e"/>
+
+  <!-- Animated exhaust smoke -->
+  <circle cx="288" cy="3" r="4" fill="#3a3a3e" opacity=".5">
+    <animate attributeName="cy"      values="3;-4;-12" dur="2s"   repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".5;.25;0" dur="2s"   repeatCount="indefinite"/>
+    <animate attributeName="r"       values="4;6;9"    dur="2s"   repeatCount="indefinite"/>
+  </circle>
+  <circle cx="290" cy="2" r="3" fill="#3a3a3e" opacity=".35">
+    <animate attributeName="cy"      values="2;-6;-14"   dur="2.5s" begin=".6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".35;.15;0"  dur="2.5s" begin=".6s" repeatCount="indefinite"/>
+    <animate attributeName="r"       values="3;5;8"      dur="2.5s" begin=".6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══ WHEEL 1 — rear trailer (dual) ══ -->
+  <circle cx="28"  cy="74" r="13" fill="#171719" stroke="#333" stroke-width="1.5"/>
+  <circle cx="28"  cy="74" r="7.5" fill="#1e1e20" stroke="#3e3e3e" stroke-width="1">
+    <animateTransform attributeName="transform" type="rotate" from="0 28 74" to="360 28 74" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="28"  cy="74" r="2.5" fill="#f5a623" opacity=".55"/>
+  <circle cx="33"  cy="74" r="12" fill="none" stroke="#2e2e2e" stroke-width="2.5" opacity=".7"/>
+
+  <!-- ══ WHEEL 2 — mid trailer (dual) ══ -->
+  <circle cx="90"  cy="74" r="13" fill="#171719" stroke="#333" stroke-width="1.5"/>
+  <circle cx="90"  cy="74" r="7.5" fill="#1e1e20" stroke="#3e3e3e" stroke-width="1">
+    <animateTransform attributeName="transform" type="rotate" from="0 90 74" to="360 90 74" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="90"  cy="74" r="2.5" fill="#f5a623" opacity=".55"/>
+  <circle cx="95"  cy="74" r="12" fill="none" stroke="#2e2e2e" stroke-width="2.5" opacity=".7"/>
+
+  <!-- ══ WHEEL 3 — cab rear drive (dual) ══ -->
+  <circle cx="236" cy="74" r="13" fill="#171719" stroke="#333" stroke-width="1.5"/>
+  <circle cx="236" cy="74" r="7.5" fill="#1e1e20" stroke="#3e3e3e" stroke-width="1">
+    <animateTransform attributeName="transform" type="rotate" from="0 236 74" to="360 236 74" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="236" cy="74" r="2.5" fill="#f5a623" opacity=".55"/>
+  <circle cx="241" cy="74" r="12" fill="none" stroke="#2e2e2e" stroke-width="2.5" opacity=".7"/>
+
+  <!-- ══ WHEEL 4 — cab front steer (single) ══ -->
+  <circle cx="280" cy="74" r="12" fill="#171719" stroke="#333" stroke-width="1.5"/>
+  <circle cx="280" cy="74" r="6.5" fill="#1e1e20" stroke="#3e3e3e" stroke-width="1">
+    <animateTransform attributeName="transform" type="rotate" from="0 280 74" to="360 280 74" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="74" r="2.5" fill="#f5a623" opacity=".55"/>
+</svg>

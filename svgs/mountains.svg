@@ -1,0 +1,13 @@
+<svg width="100%" height="130" viewBox="0 0 1440 130" preserveAspectRatio="none"
+  xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
+  <!-- Far mountain range -->
+  <path d="M0,130 L0,85 L90,50 L170,75 L270,28 L360,68 L440,38
+           L530,72 L620,18 L700,58 L790,32 L870,65 L950,22
+           L1040,68 L1130,42 L1220,75 L1320,48 L1440,58 L1440,130Z"
+        fill="#17171b"/>
+  <!-- Near mountain range -->
+  <path d="M0,130 L0,102 L110,78 L220,98 L320,68 L430,88 L540,62
+           L650,82 L760,64 L870,86 L980,66 L1090,88 L1200,70
+           L1320,90 L1440,78 L1440,130Z"
+        fill="#1e1e23"/>
+</svg>
