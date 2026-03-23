@@ -1,0 +1,250 @@
+{
+  "seo": {
+    "title": "AB Carriers — Freight & Logistics | Birgunj to Biratnagar, Nepal",
+    "description": "AB Carriers provides Full Truckload, Partial Load, and Express Cargo services along the Birgunj–Biratnagar corridor in Nepal. Over 20 years of trusted freight on the Mahendra Rajmarg.",
+    "keywords": "AB Carriers Nepal, freight Birgunj Biratnagar, cargo Nepal Terai, truck logistics Nepal, Mahendra Rajmarg freight, full truckload Nepal, partial load Terai, express cargo Birgunj",
+    "og_title": "AB Carriers — Nepal's Terai Freight Company",
+    "og_description": "Three 6-wheel trucks. 20+ years on road. Daily freight runs from Birgunj to Biratnagar along Nepal's Mahendra Rajmarg.",
+    "og_image": "svgs/og-preview.svg",
+    "canonical": "https://www.abcarriers.com.np",
+    "locale": "en_NP",
+    "schema_type": "LocalBusiness",
+    "schema_name": "AB Carriers Pvt. Ltd.",
+    "schema_address": {
+      "streetAddress": "Adarshanagar",
+      "addressLocality": "Birgunj",
+      "addressRegion": "Parsa",
+      "addressCountry": "NP"
+    },
+    "schema_telephone": "+977-51-520-881",
+    "schema_geo": {
+      "latitude": "27.0104",
+      "longitude": "84.8779"
+    }
+  },
+  "company": {
+    "name": "A.B Carriers",
+    "legal_name": "AB Carriers Pvt. Ltd.",
+    "tagline": "Nepal's Terai Freight Company",
+    "established": 2004,
+    "years_in_business": "20+",
+    "corridor": "Birgunj — Biratnagar",
+    "highway": "Mahendra Rajmarg (East-West Highway)",
+    "fleet_count": 3,
+    "fleet_type": "6-Wheel Trucks"
+  },
+  "hero": {
+    "eyebrow": "Birgunj — Biratnagar Corridor · Nepal",
+    "headline_line1": "Nepal's Terai",
+    "headline_line2": "Freight Co.",
+    "headline_line3": "Since 2004",
+    "body": "Three trusted trucks. Over 20 years on the Mahendra Rajmarg. AB Carriers delivers Full, Partial, and Express freight from Birgunj to Biratnagar — every working day, without excuses.",
+    "cta_primary": "Request a Quote",
+    "cta_secondary": "View Our Route"
+  },
+  "stats": [
+    { "value": "20+",    "label": "Years in Business" },
+    { "value": "3",      "label": "6-Wheel Trucks" },
+    { "value": "395km",  "label": "Corridor Length" },
+    { "value": "Daily",  "label": "Departures" }
+  ],
+  "marquee": [
+    "Full Truckload",
+    "Partial Load",
+    "Express Cargo",
+    "Birgunj → Biratnagar",
+    "Daily Departures",
+    "20+ Years Experience",
+    "3 Six-Wheel Trucks",
+    "Terai Corridor Specialists"
+  ],
+  "services": {
+    "section_label": "What We Offer",
+    "section_title": "Three Services. Done Right.",
+    "section_sub": "We keep it focused — Full Load, Partial Load, and Express. Every service runs on 20 years of road knowledge between Birgunj and Biratnagar.",
+    "items": [
+      {
+        "number": "01",
+        "name": "Full Truckload",
+        "slug": "ftl",
+        "description": "Your cargo takes the whole truck. No co-loading, no waiting for other consignments. The vehicle goes when you say — direct Birgunj to Biratnagar and return.",
+        "details": [
+          { "key": "Capacity",  "value": "Up to 8–10 tonnes" },
+          { "key": "Transit",   "value": "10–12 hrs" },
+          { "key": "Direction", "value": "Both ways" }
+        ]
+      },
+      {
+        "number": "02",
+        "name": "Partial Load",
+        "slug": "ltl",
+        "description": "Share the truck — pay only for the space your goods occupy. Ideal for traders and businesses that move regular but smaller volumes along the corridor.",
+        "details": [
+          { "key": "Minimum",   "value": "100 kg" },
+          { "key": "Transit",   "value": "12–18 hrs" },
+          { "key": "Direction", "value": "Birgunj → Biratnagar" }
+        ]
+      },
+      {
+        "number": "03",
+        "name": "Express Cargo",
+        "slug": "express",
+        "description": "Time-sensitive shipments dispatched same day. Priority loading, minimal stops, overnight delivery. For goods that cannot wait until the next morning's run.",
+        "details": [
+          { "key": "Capacity",  "value": "Up to 3 tonnes" },
+          { "key": "Transit",   "value": "Overnight" },
+          { "key": "Direction", "value": "Birgunj → Biratnagar" }
+        ]
+      }
+    ]
+  },
+  "routes": {
+    "section_label": "Our Route",
+    "section_title": "Birgunj to Biratnagar",
+    "section_sub": "One main corridor along the Mahendra Rajmarg. Drops begin from Hariyon and Lalbandi onwards — no earlier stops on outbound runs.",
+    "drop_policy_note": "Goods are accepted for delivery from Hariyon / Lalbandi onwards. No drops before these points on outbound runs.",
+    "return_note_heading": "Return Service",
+    "return_badge": "Full Load Only",
+    "return_body": "The return route — Biratnagar to Birgunj — operates as Full Truckload only. This service is designed for industries, manufacturers, and bulk traders moving goods westward toward Birgunj and the India border.",
+    "return_body2": "Partial and Express are not available on the return direction. Contact us to reserve the full truck.",
+    "outbound_stops": [
+      { "name": "Birgunj",     "district": "Parsa",      "type": "terminal" },
+      { "name": "Hariyon",     "district": "Rautahat",   "major": false, "first_drop": true, "note": "First drop point →" },
+      { "name": "Lalbandi",    "district": "Sarlahi",    "major": false },
+      { "name": "Lahan",       "district": "Siraha",     "major": false },
+      { "name": "Itahari",     "district": "Sunsari",    "major": true },
+      { "name": "Dharan",      "district": "Sunsari",    "major": false , "note": "Via Itahari Branch"},
+      { "name": "Biratnagar",  "district": "Morang",     "type": "terminal" }
+    ],
+    "destinations": [
+      { "name": "Hariyon",     "district": "Rautahat", "km": "~85 km",  "time": "2.5 hrs", "first_drop": true },
+      { "name": "Lalbandi",    "district": "Sarlahi",  "km": "~120 km", "time": "3.5 hrs" },
+      { "name": "Lahan",       "district": "Siraha",   "km": "~295 km", "time": "8 hrs" },
+      { "name": "Itahari",     "district": "Sunsari",  "km": "~370 km", "time": "10 hrs" },
+      { "name": "Dharan",      "district": "Sunsari",  "km": "~382 km", "time": "10.5 hrs" },
+      { "name": "Biratnagar",  "district": "Morang",   "km": "~395 km", "time": "11 hrs" }
+    ],
+    "schedule": {
+      "outbound_label": "→ Departure · Birgunj",
+      "outbound_times": ["10:00 AM", "11:00 PM"],
+      "outbound_note": "Birgunj Terminal, Adarshanagar",
+      "return_label": "← Return · Full Load Only",
+      "return_times": ["5:30 AM", "8:00 PM"],
+      "return_note": "Biratnagar Terminal"
+    }
+  },
+  "fleet": {
+    "section_label": "Our Fleet",
+    "section_title": "Three 6-Wheel Trucks",
+    "section_sub": "A compact, well-maintained fleet — each truck a proven workhorse on Nepal's Terai roads for over two decades.",
+    "vehicles": [
+      {
+        "id": "truck-1",
+        "type": "Truck No. 1",
+        "capacity": "8–10 Tonne Capacity",
+        "description": "Primary full-load vehicle. Runs the full Birgunj–Biratnagar corridor daily. Used for FTL and dedicated return runs for industrial clients.",
+        "svg": "svgs/truck.svg",
+        "specs": [
+          { "key": "Axles",   "value": "3 (6 wheels)" },
+          { "key": "Body",    "value": "Open bed" },
+          { "key": "Service", "value": "Full Truckload" }
+        ]
+      },
+      {
+        "id": "truck-2",
+        "type": "Truck No. 2",
+        "capacity": "6–8 Tonne Capacity",
+        "description": "Shared and express runs. Handles Partial Load consolidations and same-day Express cargo across the corridor.",
+        "svg": "svgs/truck.svg",
+        "specs": [
+          { "key": "Axles",   "value": "3 (6 wheels)" },
+          { "key": "Body",    "value": "Open bed" },
+          { "key": "Service", "value": "Partial & Express" }
+        ]
+      },
+      {
+        "id": "truck-3",
+        "type": "Truck No. 3",
+        "capacity": "6–8 Tonne Capacity",
+        "description": "Reserve and overflow vehicle. Deployed on peak days, double runs, and dedicated industrial return loads from Biratnagar.",
+        "svg": "svgs/truck.svg",
+        "specs": [
+          { "key": "Axles",   "value": "3 (6 wheels)" },
+          { "key": "Body",    "value": "Open bed" },
+          { "key": "Service", "value": "Full Truckload" }
+        ]
+      }
+    ]
+  },
+  "trust": {
+    "section_label": "Why AB Carriers",
+    "section_title": "20 Years of Reliability",
+    "items": [
+      {
+        "number": "01",
+        "title": "Over 20 Years",
+        "description": "Two decades operating the Birgunj – Biratnagar corridor. We know every road condition, every checkpoint, every season."
+      },
+      {
+        "number": "02",
+        "title": "On-Time Runs",
+        "description": "Our schedule is our commitment. Daily departures leave on the hour — weather, traffic, and border conditions considered."
+      },
+      {
+        "number": "03",
+        "title": "Honest Pricing",
+        "description": "We quote once, we charge once. No fuel surcharges added after the fact. No surprise handling fees at delivery."
+      },
+      {
+        "number": "04",
+        "title": "Direct Communication",
+        "description": "One phone call to either office. You speak to the team, not a call centre. Shipment updates on request, any time."
+      }
+    ]
+  },
+  "cta": {
+    "headline_line1": "Ready to Move",
+    "headline_line2": "Your Cargo?",
+    "subline": "Call our Birgunj office or send a quote request — we respond same day.",
+    "btn_quote": "Get a Free Quote",
+    "btn_phone_label": "📞 +977-51-520-881",
+    "btn_phone_href": "tel:+97751520881"
+  },
+  "contact": {
+    "section_label": "Get In Touch",
+    "section_title": "Contact Us",
+    "intro": "Two offices. One direct line. AB Carriers has been a name traders trust across the Birgunj–Biratnagar corridor for over 20 years.",
+    "form_title": "Request a Quote",
+    "form_submit": "Send Quote Request",
+    "form_success": "✓ Request sent — we'll call you shortly.",
+    "offices": [
+      { "icon": "📞", "label": "Head Office — Birgunj",  "value": "+977-51-520-881" },
+      { "icon": "📞", "label": "Branch — Biratnagar",    "value": "+977-21-470-334" },
+      { "icon": "💬", "label": "WhatsApp",               "value": "+977-9801-234-567" },
+      { "icon": "📧", "label": "Email",                  "value": "info@abcarriers.com.np" },
+      { "icon": "📍", "label": "Birgunj Office",         "value": "Adarshanagar, Birgunj, Parsa" },
+      { "icon": "📍", "label": "Biratnagar Office",      "value": "Tin Paini Chowk, Biratnagar, Morang" }
+    ]
+  },
+  "footer": {
+    "tagline": "Freight & logistics along Nepal's Terai corridor — Birgunj to Biratnagar — for over 20 years. Trusted by traders, manufacturers, and businesses across the Madhesh and Koshi provinces.",
+    "districts": "Parsa · Bara · Sunsari · Morang",
+    "copyright": "© 2026 AB Carriers Pvt. Ltd. All rights reserved.",
+    "location_line": "Birgunj, Parsa, Nepal",
+    "email": "info@abcarriers.com.np",
+    "nav": {
+      "services": ["Full Truckload", "Partial Load", "Express Cargo"],
+      "company":  ["Our Route", "Our Fleet", "Contact Us", "Get a Quote"]
+    }
+  },
+  "nav": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Routes",   "href": "#routes" },
+      { "label": "Fleet",    "href": "#fleet" },
+      { "label": "Contact",  "href": "#contact" }
+    ],
+    "cta_label": "Get Quote",
+    "cta_href": "#contact"
+  }
+}
